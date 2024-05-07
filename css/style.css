@@ -1,0 +1,514 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    
+    font-style: normal;
+    
+}
+
+.logoV img {
+    position: absolute;
+    top: 0.5em;
+    left: 1em;
+    width: 8%;
+    cursor: pointer;
+    z-index: 12;
+}
+
+main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 5em;
+    flex: 1;
+    
+}
+
+h2{
+    font-family: "Geostar Fill", serif;
+    justify-content: center;
+    text-align: center;
+    
+    color: transparent;
+    font-weight: 900;
+    font-size: 2.8em;
+    letter-spacing: 0.1em;
+    -webkit-text-stroke: 2px #fff;
+    z-index: 3;
+    text-transform: uppercase;
+}
+
+h3{
+    font-family: "Geostar Fill", serif;
+    text-align: center;
+    font-size: 2.8em;
+    padding-top: 2em;
+}
+
+h4 {
+    font-size: 1.8em;
+}
+
+.to-top{
+    background-color: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#section1.hidden {
+    
+    transform: none;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+figure {
+    
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+
+.sectionGlobale {
+    display: flex;
+    flex-direction: column;
+}
+
+#section1 {
+    height: 140vh;
+    min-height: 300px;
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    
+}
+
+#section2{
+    height: 100vh;
+    min-height: 300px;
+    flex: 1;
+    color: white;
+    
+}
+
+.conteneurVideoTexte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+video{
+    width: 90%;
+    height: 90%;
+    margin: auto auto;
+    
+    
+}
+
+.texteVideo{
+    margin: 2em;
+    text-align: justify;
+    font-size: 24px;
+}
+
+#section3{
+    height: 100vh;
+    min-height: 300px;
+    margin-right: 3.5em;
+    margin-left: 3.5em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+    
+}
+
+.logicielTexte {
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 1.3em;
+    margin-bottom: 1.5em;
+}
+
+.sfm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 60%;
+}
+
+.sfm img {
+    width: 25%;
+    height: 25%;
+}
+
+.reaper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 35%;
+}
+
+.reaper img {
+    width: 30%;
+    height: 30%;
+}
+
+.vscode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 60%;
+}
+
+.vscode img {
+    width: 18%;
+    height: 18%;
+}
+
+.behance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto auto;
+    width: 50%;
+    font-size: 2.5em;
+    padding-top: 1.3em;
+    
+}
+
+.behance img {
+    width: 60%;
+    height: 60%;
+}
+
+.linkedIn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto auto;
+    width: 50%;
+    font-size: 2.5em;
+    padding-top: 1.3em;
+    
+}
+
+.linkedIn img {
+    width: 58%;
+    height: 58%;
+}
+
+footer {
+    flex: 1;
+    
+    
+}
+
+.coordsCollege{
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+    line-height: 1.5em;
+}
+
+
+
+
+
+
+@media(prefers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    body{
+        position: relative;
+       
+    }
+
+    main{
+        margin-top: 5em;
+        margin-bottom: 10em;
+    }
+    
+    .logoV img {
+        
+        top: 0.8em;
+        left: 4em;
+        width: 5%;
+        
+    }
+
+    h2{
+       
+        font-weight: 900;
+        font-size: 2.8em;
+        letter-spacing: 0.1em;
+        
+    }
+    
+    .titreVideo {
+        font-family: "Geostar Fill", serif;
+        text-align: center;
+        font-size: 3em;
+        padding-top: 2em;
+    }
+
+    .titreLogiciel {
+        font-family: "Geostar Fill", serif;
+        text-align: center;
+        font-size: 3em;
+        padding-top: 0.5em;
+    }
+    
+    h4 {
+        font-size: 2.5em;
+    }
+    
+    
+    #section1 {
+        height: 140vh;
+        min-height: 300px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3em;
+        
+    }
+    
+    #section2{
+        height: 100vh;
+        min-height: 300px;
+        flex: 1;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 7em;
+        
+    }
+    
+    video{
+        width: 42%;
+        height: 42%;
+        
+        
+    }
+
+    .conteneurVideoTexte {
+        
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-right: 2em;
+        margin-top: 2em;
+        margin: auto auto;
+       
+    }
+    
+    .texteVideo{
+       
+        text-align: justify;
+        font-size: 30px;
+        width: 45%;
+        
+    }
+    
+    #section3{
+        height: 100vh;
+        min-height: 300px;
+        margin-right: 3.5em;
+        margin-left: 3.5em;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding-bottom: 5em;
+    }
+
+    .logicielTexte {
+        font-size: 30px;
+        text-align: justify;
+        line-height: 1.3em;
+        margin-bottom: 1.5em;
+        padding-top: 1em;
+        width: 100%;
+        
+    }
+    
+    .sfm {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto auto;
+        width: 60%;
+
+    }
+    
+    .sfm img {
+        width: 22%;
+        height: 22%;
+    }
+    
+    .sfmTexte {
+        width: 100%;
+        margin: auto auto;
+    }
+
+    .conteneurSFM{
+        padding-top: 5em;
+        width: 70%;
+        margin-top: 1.8em;
+        margin: auto auto;
+    }
+
+    .reaper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto auto;
+        width: 40%;
+    }
+
+    .conteneurReaper {
+        padding-top: 5em;
+        width: 70%;
+        margin: auto auto;
+    }
+    
+    .reaper img {
+        width: 30%;
+        height: 30%;
+    }
+    
+    .reaperTexte {
+        width: 100%;
+        margin: auto auto;
+    }
+
+    .vscode {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto auto;
+        margin-top: 5em;
+        width: 40%;
+    }
+
+    .vscodeTexte {
+        margin: auto auto;
+        width: 70%;
+    }
+    
+
+    .vscode img {
+        width: 18%;
+        height: 18%;
+    }
+    
+    .behance {
+        
+        width: 70%;
+        
+        
+    }
+
+    
+    
+    .behance img {
+        width: 70%;
+        height: 70%;
+    }
+    
+    .linkedIn {
+        
+        width: 70%;
+        
+        
+    }
+    
+    .linkedIn img {
+        width: 68%;
+        height: 68%;
+    }
+    
+    
+
+    footer {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 2em;
+        
+    }
+    
+   
+
+}
+
+@media screen and (min-width: 1500px) {
+
+
+    #section3 {
+        
+        padding-bottom: 17em;
+       
+        
+    }
+
+}

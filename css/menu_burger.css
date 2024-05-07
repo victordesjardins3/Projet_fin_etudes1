@@ -1,0 +1,127 @@
+
+.barre-menu{   
+    
+    display: flex;
+    align-items: center;
+}
+
+
+.barre-menu > label {
+   
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    border-bottom: 2px solid #ddd ;
+    
+    z-index: 10;
+}
+
+.barre-menu, .menu, footer {
+    background: #333;
+    color: #ddd;
+}
+
+
+.menu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-110%);
+    transition: transform 1s;
+    list-style-type: none;
+    z-index: 9;
+}
+
+
+.bouton-burger {
+    display: block;
+    position: fixed;
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem;
+    right: 0;
+    background: linear-gradient(to bottom, #ddd 0%, #ddd 20%, transparent 20%, transparent 40%, #ddd 40%, #ddd 60%, transparent 60%, transparent 80%, #ddd 80%, #ddd 100%);
+    cursor: pointer;
+    transition: transform 400ms;
+    z-index: 4;
+}
+
+#cc-pour-bouton-burger:checked~.barre-menu>label>.bouton-burger {
+    transform: rotate(90deg);
+}
+
+#cc-pour-bouton-burger:checked~.barre-menu>.menu {
+    transform: translateY(0%);
+}
+
+#cc-pour-bouton-burger {
+    
+    display: none;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin: 2em 4em 2em 4em; /* top-right-bottom-left */
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ddd;
+    text-align: center;
+    font-size: 3em;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .menu {
+        position: static;
+        flex-direction: row;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+        transform: none;
+        width: 50%;
+        height: 6em;
+        background-color: transparent;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .menu a {
+        flex-grow: 1;
+        font-size: 1.2em;
+        background: linear-gradient(180deg, rgb(156, 156, 156), rgb(83, 83, 83));
+        
+    }
+
+    .barre-menu {
+        height: 6em;
+        border: none;
+        justify-content: flex-end;
+        background-color: transparent;
+        position: absolute;
+        right: 47em;
+        
+    }
+
+    .bouton-burger {
+        position: relative;
+    }
+
+    label {
+        display: none;
+    }
+
+}
